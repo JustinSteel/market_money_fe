@@ -1,5 +1,10 @@
 class MarketsController < ApplicationController
   def index
-    MarketFacade.all_markets
+    @markets = MarketFacade.all_markets
+  end
+
+  def show
+    @market = MarketFacade.market(params[:id])
+    @vendors = MarketFacade.vendors(params[:id])
   end
 end

@@ -61,6 +61,8 @@ group :development, :test do
   gem "orderly"
   gem "webmock"
   gem "vcr"
+  gem "launchy"
+  gem "capybara"
 end
 gem "faraday"
 
