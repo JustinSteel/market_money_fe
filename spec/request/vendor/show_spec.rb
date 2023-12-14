@@ -15,6 +15,6 @@ RSpec.describe "Vendor Show", type: :request do
     expect(page).to have_content("Claudie Langworth III")
     expect(page).to have_content("1-147-179-9747")
     expect(page).to have_content("Vendor selling a variety of artisanal cured meats and sausages.")
-    expect(page).to have_content("credit accepted: No")
+    expect(page).to have_content("credit accepted?: No")
   end
 end
